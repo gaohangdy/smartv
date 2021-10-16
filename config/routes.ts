@@ -106,6 +106,7 @@
     path: '/form',
     icon: 'form',
     name: 'form',
+    hideInMenu: true,
     routes: [
       {
         path: '/form',
@@ -135,6 +136,7 @@
     path: '/list',
     icon: 'table',
     name: 'list',
+    hideInMenu: true,
     routes: [
       {
         path: '/list/search',
@@ -193,6 +195,7 @@
     path: '/profile',
     name: 'profile',
     icon: 'profile',
+    hideInMenu: true,
     routes: [
       {
         path: '/profile',
@@ -216,6 +219,7 @@
     name: 'result',
     icon: 'CheckCircleOutlined',
     path: '/result',
+    hideInMenu: true,
     routes: [
       {
         path: '/result',
@@ -239,6 +243,7 @@
     name: 'exception',
     icon: 'warning',
     path: '/exception',
+    hideInMenu: true,
     routes: [
       {
         path: '/exception',
@@ -291,6 +296,7 @@
     name: 'editor',
     icon: 'highlight',
     path: '/editor',
+    hideInMenu: true,
     routes: [
       {
         path: '/editor',

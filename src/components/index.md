@@ -255,7 +255,7 @@ RightContent 是以上几个组件的组合，同时新增了 plugins 的 `Selec
     <span
       className={styles.action}
       onClick={() => {
-        window.location.href = 'https://pro.ant.design/docs/getting-started';
+        window.location.href = 'https://www.pactera.com';
       }}
     >
       <QuestionCircleOutlined />

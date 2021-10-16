@@ -61,7 +61,7 @@ const Security: FC = () => {
             </Link>
           </Col>
           <Col span={8}>
-            <Link to="/groups">
+            <Link to="/dashboard/monitor">
               <Card
                 hoverable
                 style={{ width: 240 }}
@@ -82,7 +82,7 @@ const Security: FC = () => {
             </Link>
           </Col>
           <Col span={8}>
-            <Link to="/groups">
+            <Link to="/dashboard/workplace">
               <Card
                 hoverable
                 style={{ width: 240 }}
@@ -103,7 +103,7 @@ const Security: FC = () => {
             </Link>
           </Col>
           <Col span={8}>
-            <Link to="/groups">
+            <Link to="/list/table-list">
               <Card
                 hoverable
                 style={{ width: 240 }}
@@ -122,7 +122,7 @@ const Security: FC = () => {
             </Link>
           </Col>
           <Col span={8}>
-            <Link to="/groups">
+            <Link to="/dashboard/store">
               <Card
                 hoverable
                 style={{ width: 240 }}
