@@ -37,4 +37,6 @@ screenshot
 .firebase
 .eslintcache
 
+.npmrc
+
 build
