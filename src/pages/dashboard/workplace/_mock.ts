@@ -34,7 +34,7 @@ const searchData: SearchDataType[] = [];
 for (let i = 0; i < 50; i += 1) {
   searchData.push({
     index: i + 1,
-    keyword: `搜索关键词-${i}`,
+    keyword: `Keyword-${i}`,
     count: Math.floor(Math.random() * 1000),
     range: Math.floor(Math.random() * 100),
     status: Math.floor((Math.random() * 10) % 2),
@@ -42,77 +42,77 @@ for (let i = 0; i < 50; i += 1) {
 }
 const salesTypeData = [
   {
-    x: '家用电器',
+    x: 'Category A',
     y: 4544,
   },
   {
-    x: '食用酒水',
+    x: 'Category B',
     y: 3321,
   },
   {
-    x: '个护健康',
+    x: 'Category C',
     y: 3113,
   },
   {
-    x: '服饰箱包',
+    x: 'Category D',
     y: 2341,
   },
   {
-    x: '母婴产品',
+    x: 'Category E',
     y: 1231,
   },
   {
-    x: '其他',
+    x: 'Others',
     y: 1231,
   },
 ];
 
 const salesTypeDataOnline = [
   {
-    x: '家用电器',
+    x: 'Category A',
     y: 244,
   },
   {
-    x: '食用酒水',
+    x: 'Category B',
     y: 321,
   },
   {
-    x: '个护健康',
+    x: 'Category C',
     y: 311,
   },
   {
-    x: '服饰箱包',
+    x: 'Category D',
     y: 41,
   },
   {
-    x: '母婴产品',
+    x: 'Category E',
     y: 121,
   },
   {
-    x: '其他',
+    x: 'Others',
     y: 111,
   },
 ];
 
 const salesTypeDataOffline = [
   {
-    x: '家用电器',
+    x: 'Category A',
     y: 99,
   },
   {
-    x: '食用酒水',
+    x: 'Category B',
     y: 188,
   },
   {
-    x: '个护健康',
+    x: 'Category C',
     y: 344,
   },
   {
-    x: '服饰箱包',
+    x: 'Category D',
     y: 255,
   },
   {
-    x: '其他',
+    x: 'Others',
     y: 65,
   },
 ];
@@ -136,8 +136,8 @@ for (let i = 0; i < 20; i += 1) {
 const titles = [
   'Alipay',
   'Angular',
-  'Ant Design',
-  'Ant Design Pro',
+  'Data Analytics N',
+  'Data Analytics N Pro',
   'Bootstrap',
   'React',
   'Vue',
@@ -146,8 +146,8 @@ const titles = [
 const avatars = [
   'https://gw.alipayobjects.com/zos/rmsportal/WdGqmHpayyMjiEhcKoVE.png', // Alipay
   'https://gw.alipayobjects.com/zos/rmsportal/zOsKZmFRdUtvpqCImOVY.png', // Angular
-  'https://gw.alipayobjects.com/zos/rmsportal/dURIMkkrRFpPgTuzkwnB.png', // Ant Design
-  'https://gw.alipayobjects.com/zos/rmsportal/sfjbOqnsXXJgNCjCzDBL.png', // Ant Design Pro
+  'https://gw.alipayobjects.com/zos/rmsportal/dURIMkkrRFpPgTuzkwnB.png', // Data Analytics N
+  'https://gw.alipayobjects.com/zos/rmsportal/sfjbOqnsXXJgNCjCzDBL.png', // Data Analytics N Pro
   'https://gw.alipayobjects.com/zos/rmsportal/siCrBXXhmvTQGWPNLBow.png', // Bootstrap
   'https://gw.alipayobjects.com/zos/rmsportal/kZzEzemZyKLKFsojXItE.png', // React
   'https://gw.alipayobjects.com/zos/rmsportal/ComBAopevLwENQdKWiIn.png', // Vue
@@ -241,7 +241,7 @@ const getActivities = (_: Request, res: Response) => {
         id: 'trend-1',
         updatedAt: new Date(),
         user: {
-          name: '曲丽丽',
+          name: 'Kamara',
           avatar: avatars2[0],
         },
         group: {

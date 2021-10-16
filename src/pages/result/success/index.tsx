@@ -10,7 +10,7 @@ const { Step } = Steps;
 const desc1 = (
   <div className={styles.title}>
     <div style={{ margin: '8px 0 4px' }}>
-      <span>曲丽丽</span>
+      <span>Kamara</span>
       <DingdingOutlined style={{ marginLeft: 8, color: '#00A0E9' }} />
     </div>
     <div>2016-12-12 12:32</div>
@@ -33,7 +33,7 @@ const content = (
   <>
     <Descriptions title="项目名称">
       <Descriptions.Item label="项目 ID">23421</Descriptions.Item>
-      <Descriptions.Item label="负责人">曲丽丽</Descriptions.Item>
+      <Descriptions.Item label="负责人">Kamara</Descriptions.Item>
       <Descriptions.Item label="生效时间">2016-12-12 ~ 2017-12-12</Descriptions.Item>
     </Descriptions>
     <br />

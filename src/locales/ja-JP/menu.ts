@@ -49,4 +49,17 @@ export default {
   'menu.editor.flow': 'フローエディタ',
   'menu.editor.mind': 'マインドエディター',
   'menu.editor.koni': 'コニエディター',
+
+  'menu.dashboard.menu': 'ダッシュボード',
+  'menu.dashboard.customer': '顧客の声',
+  'menu.dashboard.store': '店舗の声',
+  'menu.dashboard.product': '新商品提案',
+  'menu.dashboard.sales': '販売分析',
+  'menu.dashboard.history': '履歴検索',
+  'menu.dashboard.customize': 'カスタマイズ',
+
+  'menu.security': 'セキュリティ',
+  'menu.security.menu': 'セキュリティ',
+  'menu.security.users': 'ユーザー',
+  'menu.security.groups': 'グループ',
 };

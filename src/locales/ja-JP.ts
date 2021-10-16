@@ -11,6 +11,7 @@ export default {
   'layout.user.link.help': 'ヘルプ',
   'layout.user.link.privacy': 'プライバシー',
   'layout.user.link.terms': '利用規約',
+  'app.copyright.produced': 'Produced by Pactera',
   'app.preview.down.block': 'このページをローカルプロジェクトにダウンロードしてください',
   'app.welcome.link.fetch-blocks': '',
   'app.welcome.link.block-list': '',

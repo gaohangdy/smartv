@@ -33,16 +33,27 @@
   {
     path: '/dashboard',
     name: 'dashboard',
-    icon: 'dashboard',
+    // icon: 'dashboard',
+    hideChildrenInMenu: true,
     routes: [
       {
         path: '/dashboard',
-        redirect: '/dashboard/analysis',
+        redirect: '/dashboard/menu',
       },
       {
-        name: 'analysis',
-        icon: 'smile',
-        path: '/dashboard/analysis',
+        path: '/dashboard/menu',
+        name: 'menu',
+        component: './dashboard',
+      },
+      {
+        path: '/dashboard/customer',
+        name: 'customer',
+        component: './dashboard/Customer',
+      },
+      {
+        name: 'store',
+        // icon: 'smile',
+        path: '/dashboard/store',
         component: './dashboard/analysis',
       },
       {
@@ -56,6 +67,38 @@
         icon: 'smile',
         path: '/dashboard/workplace',
         component: './dashboard/workplace',
+      },
+    ],
+  },
+  {
+    path: '/security',
+    name: 'security',
+    // icon: 'crown',
+    access: 'canAdmin',
+    // component: './security',
+    hideChildrenInMenu: true,
+    routes: [
+      {
+        path: '/security',
+        redirect: '/security/menu',
+      },
+      {
+        path: '/security/menu',
+        name: 'menu',
+        component: './security',
+      },
+      {
+        path: '/security/users',
+        name: 'users',
+        component: './security/Users',
+      },
+      {
+        path: '/security/groups',
+        name: 'groups',
+        component: './security/Groups',
+      },
+      {
+        component: './404',
       },
     ],
   },
@@ -275,7 +318,7 @@
   },
   {
     path: '/',
-    redirect: '/dashboard/analysis',
+    redirect: '/dashboard/menu',
   },
   {
     component: '404',

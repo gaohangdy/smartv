@@ -11,25 +11,25 @@ import styles from '../style.less';
 
 const columns = [
   {
-    title: '排名',
+    title: 'Ranking',
     dataIndex: 'index',
     key: 'index',
   },
   {
-    title: '搜索关键词',
+    title: 'Keyword',
     dataIndex: 'keyword',
     key: 'keyword',
     render: (text: React.ReactNode) => <a href="/">{text}</a>,
   },
   {
-    title: '用户数',
+    title: 'User',
     dataIndex: 'count',
     key: 'count',
     sorter: (a: { count: number }, b: { count: number }) => a.count - b.count,
     className: styles.alignRight,
   },
   {
-    title: '周涨幅',
+    title: 'Weekly gains',
     dataIndex: 'range',
     key: 'range',
     sorter: (a: { range: number }, b: { range: number }) => a.range - b.range,
@@ -55,7 +55,7 @@ const TopSearch = ({
   <Card
     loading={loading}
     bordered={false}
-    title="线上热门搜索"
+    title="Popular words"
     extra={dropdownGroup}
     style={{
       height: '100%',
@@ -66,8 +66,8 @@ const TopSearch = ({
         <NumberInfo
           subTitle={
             <span>
-              搜索用户数
-              <Tooltip title="指标说明">
+              Total
+              <Tooltip title="Total">
                 <InfoCircleOutlined style={{ marginLeft: 8 }} />
               </Tooltip>
             </span>
@@ -83,8 +83,8 @@ const TopSearch = ({
         <NumberInfo
           subTitle={
             <span>
-              人均搜索次数
-              <Tooltip title="指标说明">
+              AVG
+              <Tooltip title="average">
                 <InfoCircleOutlined style={{ marginLeft: 8 }} />
               </Tooltip>
             </span>

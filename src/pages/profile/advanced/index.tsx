@@ -94,7 +94,7 @@ const description = (
   <RouteContext.Consumer>
     {({ isMobile }) => (
       <Descriptions className={styles.headerList} size="small" column={isMobile ? 1 : 2}>
-        <Descriptions.Item label="创建人">曲丽丽</Descriptions.Item>
+        <Descriptions.Item label="创建人">Kamara</Descriptions.Item>
         <Descriptions.Item label="订购产品">XX 服务</Descriptions.Item>
         <Descriptions.Item label="创建时间">2017-07-07</Descriptions.Item>
         <Descriptions.Item label="关联单据">
@@ -110,7 +110,7 @@ const description = (
 const desc1 = (
   <div className={classNames(styles.textSecondary, styles.stepDescription)}>
     <Fragment>
-      曲丽丽
+      Kamara
       <DingdingOutlined style={{ marginLeft: 8 }} />
     </Fragment>
     <div>2016-12-12 12:32</div>
@@ -291,7 +291,7 @@ const Advanced: FC = () => {
               <Descriptions.Item label="身份证">3321944288191034921</Descriptions.Item>
               <Descriptions.Item label="联系方式">18112345678</Descriptions.Item>
               <Descriptions.Item label="联系地址">
-                曲丽丽 18100000000 浙江省杭州市西湖区黄姑山路工专路交叉路口
+                Kamara 18100000000 浙江省杭州市西湖区黄姑山路工专路交叉路口
               </Descriptions.Item>
             </Descriptions>
             <Descriptions style={{ marginBottom: 24 }} title="信息组">

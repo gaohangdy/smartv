@@ -34,7 +34,7 @@ const searchData = [];
 for (let i = 0; i < 50; i += 1) {
   searchData.push({
     index: i + 1,
-    keyword: `搜索关键词-${i}`,
+    keyword: `Keyword-${i}`,
     count: Math.floor(Math.random() * 1000),
     range: Math.floor(Math.random() * 100),
     status: Math.floor((Math.random() * 10) % 2),
@@ -42,77 +42,77 @@ for (let i = 0; i < 50; i += 1) {
 }
 const salesTypeData = [
   {
-    x: '家用电器',
+    x: 'Category A',
     y: 4544,
   },
   {
-    x: '食用酒水',
+    x: 'Category B',
     y: 3321,
   },
   {
-    x: '个护健康',
+    x: 'Category C',
     y: 3113,
   },
   {
-    x: '服饰箱包',
+    x: 'Category D',
     y: 2341,
   },
   {
-    x: '母婴产品',
+    x: 'Category E',
     y: 1231,
   },
   {
-    x: '其他',
+    x: 'Others',
     y: 1231,
   },
 ];
 
 const salesTypeDataOnline = [
   {
-    x: '家用电器',
+    x: 'Category A',
     y: 244,
   },
   {
-    x: '食用酒水',
+    x: 'Category B',
     y: 321,
   },
   {
-    x: '个护健康',
+    x: 'Category C',
     y: 311,
   },
   {
-    x: '服饰箱包',
+    x: 'Category D',
     y: 41,
   },
   {
-    x: '母婴产品',
+    x: 'Category E',
     y: 121,
   },
   {
-    x: '其他',
+    x: 'Others',
     y: 111,
   },
 ];
 
 const salesTypeDataOffline = [
   {
-    x: '家用电器',
+    x: 'Category A',
     y: 99,
   },
   {
-    x: '食用酒水',
+    x: 'Category B',
     y: 188,
   },
   {
-    x: '个护健康',
+    x: 'Category C',
     y: 344,
   },
   {
-    x: '服饰箱包',
+    x: 'Category D',
     y: 255,
   },
   {
-    x: '其他',
+    x: 'Others',
     y: 65,
   },
 ];
@@ -129,19 +129,19 @@ for (let i = 0; i < 20; i += 1) {
   const date = moment(new Date().getTime() + 1000 * 60 * 30 * i).format('HH:mm');
   offlineChartData.push({
     date,
-    type: '客流量',
+    type: 'Customer Flow',
     value: Math.floor(Math.random() * 100) + 10,
   });
   offlineChartData.push({
     date,
-    type: '支付笔数',
+    type: 'Volume',
     value: Math.floor(Math.random() * 100) + 10,
   });
 }
 
 const radarOriginData = [
   {
-    name: '个人',
+    name: 'Personal',
     ref: 10,
     koubei: 8,
     output: 4,
@@ -149,7 +149,7 @@ const radarOriginData = [
     hot: 7,
   },
   {
-    name: '团队',
+    name: 'Team',
     ref: 3,
     koubei: 9,
     output: 6,
@@ -157,7 +157,7 @@ const radarOriginData = [
     hot: 1,
   },
   {
-    name: '部门',
+    name: 'Department',
     ref: 4,
     koubei: 1,
     output: 6,
