@@ -3,7 +3,7 @@ import { Request, Response } from 'express';
 const getChartDatas = (req: Request, res: Response) => {
   res.json({
     data: {
-      list: resultNumber,
+      list: result,
     },
   });
 };

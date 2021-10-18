@@ -4,7 +4,7 @@ import type { FC } from 'react';
 import { Gauge, WordCloud, Liquid, RingProgress } from '@ant-design/charts';
 import type { WordCloudData } from '@antv/g2plot/esm/plots/word-cloud/layer';
 
-import { GridContent } from '@ant-design/pro-layout';
+import { GridContent, PageContainer } from '@ant-design/pro-layout';
 import numeral from 'numeral';
 import Map from './components/Map';
 import ActiveChart from './components/ActiveChart';
@@ -27,6 +27,7 @@ const Monitor: FC = () => {
   });
 
   return (
+    <PageContainer breadcrumbRender={false}>
     <GridContent>
       <>
         <Row gutter={24}>
@@ -146,6 +147,7 @@ const Monitor: FC = () => {
         </Row>
       </>
     </GridContent>
+    </PageContainer>
   );
 };
 

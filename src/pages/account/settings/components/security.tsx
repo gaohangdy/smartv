@@ -12,29 +12,29 @@ const passwordStrength = {
 const SecurityView: React.FC = () => {
   const getData = () => [
     {
-      title: '账户密码',
+      title: 'Password',
       description: (
         <>
           当前密码强度：
           {passwordStrength.strong}
         </>
       ),
-      actions: [<a key="Modify">修改</a>],
+      actions: [<a key="Modify">Edit</a>],
     },
     {
-      title: '密保手机',
-      description: `已绑定手机：138****8293`,
-      actions: [<a key="Modify">修改</a>],
+      title: 'TEL',
+      description: `XXX****XX`,
+      actions: [<a key="Modify">Edit</a>],
     },
     {
-      title: '密保问题',
+      title: 'Question',
       description: '未设置密保问题，密保问题可有效保护账户安全',
       actions: [<a key="Set">设置</a>],
     },
     {
       title: '备用邮箱',
       description: `已绑定邮箱：ant***sign.com`,
-      actions: [<a key="Modify">修改</a>],
+      actions: [<a key="Modify">Edit</a>],
     },
     {
       title: 'MFA 设备',

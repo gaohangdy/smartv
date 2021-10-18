@@ -181,7 +181,7 @@ const Groups: React.FC = () => {
   ];
 
   return (
-    <PageContainer>
+    <PageContainer breadcrumbRender={false}>
       <ProTable<API.RuleListItem, API.PageParams>
         headerTitle={intl.formatMessage({
           id: 'pages.security.users.title',
@@ -217,7 +217,7 @@ const Groups: React.FC = () => {
             <div>
               <FormattedMessage id="pages.searchTable.chosen" defaultMessage="Chosen" />{' '}
               <a style={{ fontWeight: 600 }}>{selectedRowsState.length}</a>{' '}
-              <FormattedMessage id="pages.searchTable.item" defaultMessage="项" />
+              <FormattedMessage id="pages.searchTable.item" defaultMessage="Record" />
               &nbsp;&nbsp;
               <span>
                 <FormattedMessage
@@ -225,7 +225,7 @@ const Groups: React.FC = () => {
                   defaultMessage="Total number of service calls"
                 />{' '}
                 {selectedRowsState.reduce((pre, item) => pre + item.callNo!, 0)}{' '}
-                <FormattedMessage id="pages.searchTable.tenThousand" defaultMessage="万" />
+                <FormattedMessage id="pages.searchTable.tenThousand" defaultMessage="TK" />
               </span>
             </div>
           }

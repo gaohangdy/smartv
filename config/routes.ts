@@ -57,10 +57,22 @@
         component: './dashboard/analysis',
       },
       {
-        name: 'monitor',
+        name: 'product',
         icon: 'smile',
-        path: '/dashboard/monitor',
+        path: '/dashboard/product',
         component: './dashboard/monitor',
+      },
+      {
+        name: 'sales',
+        icon: 'smile',
+        path: '/dashboard/sales',
+        component: './dashboard/monitor',
+      },
+      {
+        name: 'history',
+        icon: 'smile',
+        path: '/dashboard/history',
+        component: './list/table-list',
       },
       {
         name: 'workplace',

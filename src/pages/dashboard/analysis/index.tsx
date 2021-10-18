@@ -2,7 +2,7 @@ import type { FC } from 'react';
 import { Suspense, useState } from 'react';
 import { EllipsisOutlined } from '@ant-design/icons';
 import { Col, Dropdown, Menu, Row } from 'antd';
-import { GridContent } from '@ant-design/pro-layout';
+import { GridContent, PageContainer } from '@ant-design/pro-layout';
 import type { RadioChangeEvent } from 'antd/es/radio';
 import type { RangePickerProps } from 'antd/es/date-picker/generatePicker';
 import type moment from 'moment';
@@ -99,6 +99,7 @@ const Analysis: FC<AnalysisProps> = () => {
   const activeKey = currentTabKey || (data?.offlineData[0] && data?.offlineData[0].name) || '';
 
   return (
+    <PageContainer breadcrumbRender={false}>
     <GridContent>
       <>
         <Suspense fallback={<PageLoading />}>
@@ -156,6 +157,7 @@ const Analysis: FC<AnalysisProps> = () => {
         </Suspense>
       </>
     </GridContent>
+    </PageContainer>
   );
 };
 

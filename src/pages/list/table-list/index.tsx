@@ -92,9 +92,9 @@ const TableList: React.FC = () => {
 
   const columns: ProColumns<TableListItem>[] = [
     {
-      title: '规则名称',
+      title: 'Rule Name',
       dataIndex: 'name',
-      tip: '规则名称是唯一的 key',
+      tip: 'Unique key',
       render: (dom, entity) => {
         return (
           <a
@@ -109,42 +109,42 @@ const TableList: React.FC = () => {
       },
     },
     {
-      title: '描述',
+      title: 'Description',
       dataIndex: 'desc',
       valueType: 'textarea',
     },
     {
-      title: '服务调用次数',
+      title: 'Callback',
       dataIndex: 'callNo',
       sorter: true,
       hideInForm: true,
       renderText: (val: string) => `${val}万`,
     },
     {
-      title: '状态',
+      title: 'Status',
       dataIndex: 'status',
       hideInForm: true,
       valueEnum: {
         0: {
-          text: '关闭',
+          text: 'Closed',
           status: 'Default',
         },
         1: {
-          text: '运行中',
+          text: 'Running',
           status: 'Processing',
         },
         2: {
-          text: '已上线',
+          text: 'Release',
           status: 'Success',
         },
         3: {
-          text: '异常',
+          text: 'Error',
           status: 'Error',
         },
       },
     },
     {
-      title: '上次调度时间',
+      title: 'Last access',
       sorter: true,
       dataIndex: 'updatedAt',
       valueType: 'dateTime',
@@ -156,14 +156,14 @@ const TableList: React.FC = () => {
         }
 
         if (`${status}` === '3') {
-          return <Input {...rest} placeholder="请输入异常原因！" />;
+          return <Input {...rest} placeholder="Please input issue！" />;
         }
 
         return defaultRender(item);
       },
     },
     {
-      title: '操作',
+      title: 'Option',
       dataIndex: 'option',
       valueType: 'option',
       render: (_, record) => [
@@ -174,19 +174,19 @@ const TableList: React.FC = () => {
             setCurrentRow(record);
           }}
         >
-          配置
+          Config
         </a>,
         <a key="subscribeAlert" href="https://procomponents.ant.design/">
-          订阅警报
+          Focus warning
         </a>,
       ],
     },
   ];
 
   return (
-    <PageContainer>
+    <PageContainer breadcrumbRender={false}>
       <ProTable<TableListItem, TableListPagination>
-        headerTitle="查询表格"
+        headerTitle="Search"
         actionRef={actionRef}
         rowKey="key"
         search={{
@@ -200,7 +200,7 @@ const TableList: React.FC = () => {
               handleModalVisible(true);
             }}
           >
-            <PlusOutlined /> 新建
+            <PlusOutlined /> Create
           </Button>,
         ]}
         request={rule}
@@ -215,7 +215,7 @@ const TableList: React.FC = () => {
         <FooterToolbar
           extra={
             <div>
-              已选择{' '}
+              Selected{' '}
               <a
                 style={{
                   fontWeight: 600,
@@ -223,9 +223,9 @@ const TableList: React.FC = () => {
               >
                 {selectedRowsState.length}
               </a>{' '}
-              项 &nbsp;&nbsp;
+              record &nbsp;&nbsp;
               <span>
-                服务调用次数总计 {selectedRowsState.reduce((pre, item) => pre + item.callNo!, 0)} 万
+                Total access {selectedRowsState.reduce((pre, item) => pre + item.callNo!, 0)} 万
               </span>
             </div>
           }
@@ -237,13 +237,13 @@ const TableList: React.FC = () => {
               actionRef.current?.reloadAndRest?.();
             }}
           >
-            批量删除
+            Batch Delete
           </Button>
-          <Button type="primary">批量审批</Button>
+          <Button type="primary">Batch Approve</Button>
         </FooterToolbar>
       )}
       <ModalForm
-        title="新建规则"
+        title="Create rule"
         width="400px"
         visible={createModalVisible}
         onVisibleChange={handleModalVisible}
@@ -261,7 +261,7 @@ const TableList: React.FC = () => {
           rules={[
             {
               required: true,
-              message: '规则名称为必填项',
+              message: 'Rule name required',
             },
           ]}
           width="md"

@@ -65,8 +65,8 @@ function getCurrentUse(req: Request, res: Response) {
           key: '330100',
         },
       },
-      address: '西湖区工专路 77 号',
-      phone: '0752-268888888',
+      address: 'Test address',
+      phone: 'XX-XXXXXXX',
     },
   });
 }

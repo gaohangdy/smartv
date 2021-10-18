@@ -10,6 +10,18 @@ export type ChartData = {
   month: string;
 };
 
+export type DcChartData = {
+  content: string;
+  content_id: string;
+  item_code: string;
+  label_codes: [];
+  language_code: string;
+  original: boolean;
+  publish_timestamp: string;
+  sentiment: string;
+  word_list: [];
+};
+
 export type ChartCardSize = {
   w: number;
   h: number;

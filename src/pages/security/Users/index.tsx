@@ -181,7 +181,7 @@ const Users: React.FC = () => {
   ];
 
   return (
-    <PageContainer>
+    <PageContainer breadcrumbRender={false}>
       <ProTable<API.RuleListItem, API.PageParams>
         headerTitle={intl.formatMessage({
           id: 'pages.security.users.title',
