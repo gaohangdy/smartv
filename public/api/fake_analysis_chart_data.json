@@ -1,0 +1,901 @@
+{
+    "data": {
+        "visitData": [
+            {
+                "x": "2021-10-18",
+                "y": 7
+            },
+            {
+                "x": "2021-10-19",
+                "y": 5
+            },
+            {
+                "x": "2021-10-20",
+                "y": 4
+            },
+            {
+                "x": "2021-10-21",
+                "y": 2
+            },
+            {
+                "x": "2021-10-22",
+                "y": 4
+            },
+            {
+                "x": "2021-10-23",
+                "y": 7
+            },
+            {
+                "x": "2021-10-24",
+                "y": 5
+            },
+            {
+                "x": "2021-10-25",
+                "y": 6
+            },
+            {
+                "x": "2021-10-26",
+                "y": 5
+            },
+            {
+                "x": "2021-10-27",
+                "y": 9
+            },
+            {
+                "x": "2021-10-28",
+                "y": 6
+            },
+            {
+                "x": "2021-10-29",
+                "y": 3
+            },
+            {
+                "x": "2021-10-30",
+                "y": 1
+            },
+            {
+                "x": "2021-10-31",
+                "y": 5
+            },
+            {
+                "x": "2021-11-01",
+                "y": 3
+            },
+            {
+                "x": "2021-11-02",
+                "y": 6
+            },
+            {
+                "x": "2021-11-03",
+                "y": 5
+            }
+        ],
+        "visitData2": [
+            {
+                "x": "2021-10-18",
+                "y": 1
+            },
+            {
+                "x": "2021-10-19",
+                "y": 6
+            },
+            {
+                "x": "2021-10-20",
+                "y": 4
+            },
+            {
+                "x": "2021-10-21",
+                "y": 8
+            },
+            {
+                "x": "2021-10-22",
+                "y": 3
+            },
+            {
+                "x": "2021-10-23",
+                "y": 7
+            },
+            {
+                "x": "2021-10-24",
+                "y": 2
+            }
+        ],
+        "salesData": [
+            {
+                "x": "1月",
+                "y": 879
+            },
+            {
+                "x": "2月",
+                "y": 413
+            },
+            {
+                "x": "3月",
+                "y": 765
+            },
+            {
+                "x": "4月",
+                "y": 979
+            },
+            {
+                "x": "5月",
+                "y": 1037
+            },
+            {
+                "x": "6月",
+                "y": 1033
+            },
+            {
+                "x": "7月",
+                "y": 1159
+            },
+            {
+                "x": "8月",
+                "y": 900
+            },
+            {
+                "x": "9月",
+                "y": 746
+            },
+            {
+                "x": "10月",
+                "y": 1053
+            },
+            {
+                "x": "11月",
+                "y": 1192
+            },
+            {
+                "x": "12月",
+                "y": 772
+            }
+        ],
+        "searchData": [
+            {
+                "index": 1,
+                "keyword": "Keyword-0",
+                "count": 798,
+                "range": 67,
+                "status": 1
+            },
+            {
+                "index": 2,
+                "keyword": "Keyword-1",
+                "count": 558,
+                "range": 98,
+                "status": 0
+            },
+            {
+                "index": 3,
+                "keyword": "Keyword-2",
+                "count": 99,
+                "range": 41,
+                "status": 1
+            },
+            {
+                "index": 4,
+                "keyword": "Keyword-3",
+                "count": 927,
+                "range": 58,
+                "status": 0
+            },
+            {
+                "index": 5,
+                "keyword": "Keyword-4",
+                "count": 796,
+                "range": 59,
+                "status": 1
+            },
+            {
+                "index": 6,
+                "keyword": "Keyword-5",
+                "count": 19,
+                "range": 90,
+                "status": 0
+            },
+            {
+                "index": 7,
+                "keyword": "Keyword-6",
+                "count": 811,
+                "range": 59,
+                "status": 0
+            },
+            {
+                "index": 8,
+                "keyword": "Keyword-7",
+                "count": 516,
+                "range": 69,
+                "status": 0
+            },
+            {
+                "index": 9,
+                "keyword": "Keyword-8",
+                "count": 950,
+                "range": 30,
+                "status": 1
+            },
+            {
+                "index": 10,
+                "keyword": "Keyword-9",
+                "count": 830,
+                "range": 4,
+                "status": 1
+            },
+            {
+                "index": 11,
+                "keyword": "Keyword-10",
+                "count": 684,
+                "range": 78,
+                "status": 0
+            },
+            {
+                "index": 12,
+                "keyword": "Keyword-11",
+                "count": 75,
+                "range": 82,
+                "status": 0
+            },
+            {
+                "index": 13,
+                "keyword": "Keyword-12",
+                "count": 486,
+                "range": 24,
+                "status": 1
+            },
+            {
+                "index": 14,
+                "keyword": "Keyword-13",
+                "count": 742,
+                "range": 53,
+                "status": 0
+            },
+            {
+                "index": 15,
+                "keyword": "Keyword-14",
+                "count": 284,
+                "range": 42,
+                "status": 1
+            },
+            {
+                "index": 16,
+                "keyword": "Keyword-15",
+                "count": 582,
+                "range": 55,
+                "status": 1
+            },
+            {
+                "index": 17,
+                "keyword": "Keyword-16",
+                "count": 740,
+                "range": 27,
+                "status": 0
+            },
+            {
+                "index": 18,
+                "keyword": "Keyword-17",
+                "count": 294,
+                "range": 99,
+                "status": 1
+            },
+            {
+                "index": 19,
+                "keyword": "Keyword-18",
+                "count": 317,
+                "range": 74,
+                "status": 1
+            },
+            {
+                "index": 20,
+                "keyword": "Keyword-19",
+                "count": 610,
+                "range": 36,
+                "status": 1
+            },
+            {
+                "index": 21,
+                "keyword": "Keyword-20",
+                "count": 815,
+                "range": 41,
+                "status": 0
+            },
+            {
+                "index": 22,
+                "keyword": "Keyword-21",
+                "count": 429,
+                "range": 98,
+                "status": 1
+            },
+            {
+                "index": 23,
+                "keyword": "Keyword-22",
+                "count": 353,
+                "range": 87,
+                "status": 0
+            },
+            {
+                "index": 24,
+                "keyword": "Keyword-23",
+                "count": 892,
+                "range": 78,
+                "status": 1
+            },
+            {
+                "index": 25,
+                "keyword": "Keyword-24",
+                "count": 780,
+                "range": 20,
+                "status": 0
+            },
+            {
+                "index": 26,
+                "keyword": "Keyword-25",
+                "count": 608,
+                "range": 49,
+                "status": 1
+            },
+            {
+                "index": 27,
+                "keyword": "Keyword-26",
+                "count": 299,
+                "range": 34,
+                "status": 0
+            },
+            {
+                "index": 28,
+                "keyword": "Keyword-27",
+                "count": 783,
+                "range": 24,
+                "status": 0
+            },
+            {
+                "index": 29,
+                "keyword": "Keyword-28",
+                "count": 618,
+                "range": 72,
+                "status": 1
+            },
+            {
+                "index": 30,
+                "keyword": "Keyword-29",
+                "count": 3,
+                "range": 77,
+                "status": 1
+            },
+            {
+                "index": 31,
+                "keyword": "Keyword-30",
+                "count": 221,
+                "range": 35,
+                "status": 1
+            },
+            {
+                "index": 32,
+                "keyword": "Keyword-31",
+                "count": 941,
+                "range": 67,
+                "status": 1
+            },
+            {
+                "index": 33,
+                "keyword": "Keyword-32",
+                "count": 610,
+                "range": 57,
+                "status": 0
+            },
+            {
+                "index": 34,
+                "keyword": "Keyword-33",
+                "count": 712,
+                "range": 61,
+                "status": 0
+            },
+            {
+                "index": 35,
+                "keyword": "Keyword-34",
+                "count": 825,
+                "range": 57,
+                "status": 1
+            },
+            {
+                "index": 36,
+                "keyword": "Keyword-35",
+                "count": 552,
+                "range": 92,
+                "status": 0
+            },
+            {
+                "index": 37,
+                "keyword": "Keyword-36",
+                "count": 374,
+                "range": 57,
+                "status": 1
+            },
+            {
+                "index": 38,
+                "keyword": "Keyword-37",
+                "count": 47,
+                "range": 38,
+                "status": 1
+            },
+            {
+                "index": 39,
+                "keyword": "Keyword-38",
+                "count": 226,
+                "range": 62,
+                "status": 0
+            },
+            {
+                "index": 40,
+                "keyword": "Keyword-39",
+                "count": 866,
+                "range": 27,
+                "status": 1
+            },
+            {
+                "index": 41,
+                "keyword": "Keyword-40",
+                "count": 470,
+                "range": 76,
+                "status": 1
+            },
+            {
+                "index": 42,
+                "keyword": "Keyword-41",
+                "count": 996,
+                "range": 8,
+                "status": 0
+            },
+            {
+                "index": 43,
+                "keyword": "Keyword-42",
+                "count": 419,
+                "range": 25,
+                "status": 1
+            },
+            {
+                "index": 44,
+                "keyword": "Keyword-43",
+                "count": 416,
+                "range": 96,
+                "status": 1
+            },
+            {
+                "index": 45,
+                "keyword": "Keyword-44",
+                "count": 267,
+                "range": 0,
+                "status": 0
+            },
+            {
+                "index": 46,
+                "keyword": "Keyword-45",
+                "count": 45,
+                "range": 20,
+                "status": 1
+            },
+            {
+                "index": 47,
+                "keyword": "Keyword-46",
+                "count": 72,
+                "range": 14,
+                "status": 0
+            },
+            {
+                "index": 48,
+                "keyword": "Keyword-47",
+                "count": 770,
+                "range": 0,
+                "status": 1
+            },
+            {
+                "index": 49,
+                "keyword": "Keyword-48",
+                "count": 150,
+                "range": 8,
+                "status": 0
+            },
+            {
+                "index": 50,
+                "keyword": "Keyword-49",
+                "count": 408,
+                "range": 52,
+                "status": 1
+            }
+        ],
+        "offlineData": [
+            {
+                "name": "Stores 0",
+                "cvr": 0.9
+            },
+            {
+                "name": "Stores 1",
+                "cvr": 0.1
+            },
+            {
+                "name": "Stores 2",
+                "cvr": 0.9
+            },
+            {
+                "name": "Stores 3",
+                "cvr": 0.5
+            },
+            {
+                "name": "Stores 4",
+                "cvr": 0.9
+            },
+            {
+                "name": "Stores 5",
+                "cvr": 0.9
+            },
+            {
+                "name": "Stores 6",
+                "cvr": 0.1
+            },
+            {
+                "name": "Stores 7",
+                "cvr": 0.3
+            },
+            {
+                "name": "Stores 8",
+                "cvr": 0.4
+            },
+            {
+                "name": "Stores 9",
+                "cvr": 0.4
+            }
+        ],
+        "offlineChartData": [
+            {
+                "date": "23:04",
+                "type": "Customer Flow",
+                "value": 21
+            },
+            {
+                "date": "23:04",
+                "type": "Volume",
+                "value": 70
+            },
+            {
+                "date": "23:34",
+                "type": "Customer Flow",
+                "value": 63
+            },
+            {
+                "date": "23:34",
+                "type": "Volume",
+                "value": 10
+            },
+            {
+                "date": "00:04",
+                "type": "Customer Flow",
+                "value": 69
+            },
+            {
+                "date": "00:04",
+                "type": "Volume",
+                "value": 20
+            },
+            {
+                "date": "00:34",
+                "type": "Customer Flow",
+                "value": 40
+            },
+            {
+                "date": "00:34",
+                "type": "Volume",
+                "value": 27
+            },
+            {
+                "date": "01:04",
+                "type": "Customer Flow",
+                "value": 21
+            },
+            {
+                "date": "01:04",
+                "type": "Volume",
+                "value": 71
+            },
+            {
+                "date": "01:34",
+                "type": "Customer Flow",
+                "value": 64
+            },
+            {
+                "date": "01:34",
+                "type": "Volume",
+                "value": 25
+            },
+            {
+                "date": "02:04",
+                "type": "Customer Flow",
+                "value": 21
+            },
+            {
+                "date": "02:04",
+                "type": "Volume",
+                "value": 38
+            },
+            {
+                "date": "02:34",
+                "type": "Customer Flow",
+                "value": 10
+            },
+            {
+                "date": "02:34",
+                "type": "Volume",
+                "value": 43
+            },
+            {
+                "date": "03:04",
+                "type": "Customer Flow",
+                "value": 66
+            },
+            {
+                "date": "03:04",
+                "type": "Volume",
+                "value": 75
+            },
+            {
+                "date": "03:34",
+                "type": "Customer Flow",
+                "value": 100
+            },
+            {
+                "date": "03:34",
+                "type": "Volume",
+                "value": 100
+            },
+            {
+                "date": "04:04",
+                "type": "Customer Flow",
+                "value": 65
+            },
+            {
+                "date": "04:04",
+                "type": "Volume",
+                "value": 90
+            },
+            {
+                "date": "04:34",
+                "type": "Customer Flow",
+                "value": 32
+            },
+            {
+                "date": "04:34",
+                "type": "Volume",
+                "value": 37
+            },
+            {
+                "date": "05:04",
+                "type": "Customer Flow",
+                "value": 83
+            },
+            {
+                "date": "05:04",
+                "type": "Volume",
+                "value": 88
+            },
+            {
+                "date": "05:34",
+                "type": "Customer Flow",
+                "value": 100
+            },
+            {
+                "date": "05:34",
+                "type": "Volume",
+                "value": 63
+            },
+            {
+                "date": "06:04",
+                "type": "Customer Flow",
+                "value": 10
+            },
+            {
+                "date": "06:04",
+                "type": "Volume",
+                "value": 108
+            },
+            {
+                "date": "06:34",
+                "type": "Customer Flow",
+                "value": 90
+            },
+            {
+                "date": "06:34",
+                "type": "Volume",
+                "value": 99
+            },
+            {
+                "date": "07:04",
+                "type": "Customer Flow",
+                "value": 57
+            },
+            {
+                "date": "07:04",
+                "type": "Volume",
+                "value": 54
+            },
+            {
+                "date": "07:34",
+                "type": "Customer Flow",
+                "value": 37
+            },
+            {
+                "date": "07:34",
+                "type": "Volume",
+                "value": 66
+            },
+            {
+                "date": "08:04",
+                "type": "Customer Flow",
+                "value": 86
+            },
+            {
+                "date": "08:04",
+                "type": "Volume",
+                "value": 99
+            },
+            {
+                "date": "08:34",
+                "type": "Customer Flow",
+                "value": 104
+            },
+            {
+                "date": "08:34",
+                "type": "Volume",
+                "value": 58
+            }
+        ],
+        "salesTypeData": [
+            {
+                "x": "Category A",
+                "y": 4544
+            },
+            {
+                "x": "Category B",
+                "y": 3321
+            },
+            {
+                "x": "Category C",
+                "y": 3113
+            },
+            {
+                "x": "Category D",
+                "y": 2341
+            },
+            {
+                "x": "Category E",
+                "y": 1231
+            },
+            {
+                "x": "Others",
+                "y": 1231
+            }
+        ],
+        "salesTypeDataOnline": [
+            {
+                "x": "Category A",
+                "y": 244
+            },
+            {
+                "x": "Category B",
+                "y": 321
+            },
+            {
+                "x": "Category C",
+                "y": 311
+            },
+            {
+                "x": "Category D",
+                "y": 41
+            },
+            {
+                "x": "Category E",
+                "y": 121
+            },
+            {
+                "x": "Others",
+                "y": 111
+            }
+        ],
+        "salesTypeDataOffline": [
+            {
+                "x": "Category A",
+                "y": 99
+            },
+            {
+                "x": "Category B",
+                "y": 188
+            },
+            {
+                "x": "Category C",
+                "y": 344
+            },
+            {
+                "x": "Category D",
+                "y": 255
+            },
+            {
+                "x": "Others",
+                "y": 65
+            }
+        ],
+        "radarData": [
+            {
+                "name": "Personal",
+                "label": "引用",
+                "value": 10
+            },
+            {
+                "name": "Personal",
+                "label": "口碑",
+                "value": 8
+            },
+            {
+                "name": "Personal",
+                "label": "产量",
+                "value": 4
+            },
+            {
+                "name": "Personal",
+                "label": "贡献",
+                "value": 5
+            },
+            {
+                "name": "Personal",
+                "label": "热度",
+                "value": 7
+            },
+            {
+                "name": "Team",
+                "label": "引用",
+                "value": 3
+            },
+            {
+                "name": "Team",
+                "label": "口碑",
+                "value": 9
+            },
+            {
+                "name": "Team",
+                "label": "产量",
+                "value": 6
+            },
+            {
+                "name": "Team",
+                "label": "贡献",
+                "value": 3
+            },
+            {
+                "name": "Team",
+                "label": "热度",
+                "value": 1
+            },
+            {
+                "name": "Department",
+                "label": "引用",
+                "value": 4
+            },
+            {
+                "name": "Department",
+                "label": "口碑",
+                "value": 1
+            },
+            {
+                "name": "Department",
+                "label": "产量",
+                "value": 6
+            },
+            {
+                "name": "Department",
+                "label": "贡献",
+                "value": 5
+            },
+            {
+                "name": "Department",
+                "label": "热度",
+                "value": 7
+            }
+        ]
+    }
+}

@@ -1,0 +1,506 @@
+{
+    "data": {
+        "list": [
+            {
+                "name": "九江市",
+                "value": 25,
+                "type": 1
+            },
+            {
+                "name": "贵港市",
+                "value": 65,
+                "type": 2
+            },
+            {
+                "name": "昭通市",
+                "value": 52,
+                "type": 1
+            },
+            {
+                "name": "海南藏族自治州",
+                "value": 81,
+                "type": 0
+            },
+            {
+                "name": "离岛",
+                "value": 64,
+                "type": 2
+            },
+            {
+                "name": "海外",
+                "value": 76,
+                "type": 2
+            },
+            {
+                "name": "烟台市",
+                "value": 29,
+                "type": 1
+            },
+            {
+                "name": "咸阳市",
+                "value": 18,
+                "type": 0
+            },
+            {
+                "name": "上海市",
+                "value": 90,
+                "type": 1
+            },
+            {
+                "name": "乌兰察布市",
+                "value": 69,
+                "type": 0
+            },
+            {
+                "name": "台南市",
+                "value": 76,
+                "type": 1
+            },
+            {
+                "name": "上海市",
+                "value": 54,
+                "type": 0
+            },
+            {
+                "name": "新北市",
+                "value": 22,
+                "type": 2
+            },
+            {
+                "name": "吕梁市",
+                "value": 58,
+                "type": 2
+            },
+            {
+                "name": "攀枝花市",
+                "value": 44,
+                "type": 1
+            },
+            {
+                "name": "石嘴山市",
+                "value": 53,
+                "type": 1
+            },
+            {
+                "name": "甘孜藏族自治州",
+                "value": 60,
+                "type": 1
+            },
+            {
+                "name": "辽阳市",
+                "value": 26,
+                "type": 1
+            },
+            {
+                "name": "离岛",
+                "value": 73,
+                "type": 1
+            },
+            {
+                "name": "郴州市",
+                "value": 40,
+                "type": 1
+            },
+            {
+                "name": "玉林市",
+                "value": 17,
+                "type": 2
+            },
+            {
+                "name": "离岛",
+                "value": 14,
+                "type": 2
+            },
+            {
+                "name": "天津市",
+                "value": 49,
+                "type": 1
+            },
+            {
+                "name": "芜湖市",
+                "value": 18,
+                "type": 1
+            },
+            {
+                "name": "成都市",
+                "value": 40,
+                "type": 2
+            },
+            {
+                "name": "天津市",
+                "value": 46,
+                "type": 1
+            },
+            {
+                "name": "淮北市",
+                "value": 19,
+                "type": 0
+            },
+            {
+                "name": "菏泽市",
+                "value": 59,
+                "type": 1
+            },
+            {
+                "name": "新余市",
+                "value": 24,
+                "type": 1
+            },
+            {
+                "name": "柳州市",
+                "value": 61,
+                "type": 2
+            },
+            {
+                "name": "汕尾市",
+                "value": 27,
+                "type": 1
+            },
+            {
+                "name": "大理白族自治州",
+                "value": 54,
+                "type": 1
+            },
+            {
+                "name": "离岛",
+                "value": 29,
+                "type": 1
+            },
+            {
+                "name": "上海市",
+                "value": 76,
+                "type": 2
+            },
+            {
+                "name": "石嘴山市",
+                "value": 57,
+                "type": 1
+            },
+            {
+                "name": "濮阳市",
+                "value": 88,
+                "type": 2
+            },
+            {
+                "name": "许昌市",
+                "value": 39,
+                "type": 1
+            },
+            {
+                "name": "七台河市",
+                "value": 15,
+                "type": 1
+            },
+            {
+                "name": "朝阳市",
+                "value": 9,
+                "type": 1
+            },
+            {
+                "name": "商丘市",
+                "value": 60,
+                "type": 1
+            },
+            {
+                "name": "张掖市",
+                "value": 25,
+                "type": 2
+            },
+            {
+                "name": "安顺市",
+                "value": 27,
+                "type": 0
+            },
+            {
+                "name": "三沙市",
+                "value": 6,
+                "type": 2
+            },
+            {
+                "name": "海北藏族自治州",
+                "value": 32,
+                "type": 1
+            },
+            {
+                "name": "嘉义县",
+                "value": 39,
+                "type": 2
+            },
+            {
+                "name": "玉溪市",
+                "value": 74,
+                "type": 1
+            },
+            {
+                "name": "滁州市",
+                "value": 20,
+                "type": 0
+            },
+            {
+                "name": "马鞍山市",
+                "value": 33,
+                "type": 1
+            },
+            {
+                "name": "铜川市",
+                "value": 52,
+                "type": 1
+            },
+            {
+                "name": "天津市",
+                "value": 14,
+                "type": 0
+            },
+            {
+                "name": "宜宾市",
+                "value": 20,
+                "type": 1
+            },
+            {
+                "name": "贵阳市",
+                "value": 32,
+                "type": 2
+            },
+            {
+                "name": "毕节市",
+                "value": 97,
+                "type": 1
+            },
+            {
+                "name": "资阳市",
+                "value": 53,
+                "type": 1
+            },
+            {
+                "name": "离岛",
+                "value": 93,
+                "type": 1
+            },
+            {
+                "name": "天津市",
+                "value": 69,
+                "type": 1
+            },
+            {
+                "name": "黔南布依族苗族自治州",
+                "value": 42,
+                "type": 1
+            },
+            {
+                "name": "张掖市",
+                "value": 78,
+                "type": 1
+            },
+            {
+                "name": "天津市",
+                "value": 61,
+                "type": 0
+            },
+            {
+                "name": "黄冈市",
+                "value": 54,
+                "type": 2
+            },
+            {
+                "name": "德阳市",
+                "value": 3,
+                "type": 1
+            },
+            {
+                "name": "邢台市",
+                "value": 66,
+                "type": 2
+            },
+            {
+                "name": "牡丹江市",
+                "value": 91,
+                "type": 0
+            },
+            {
+                "name": "九江市",
+                "value": 97,
+                "type": 2
+            },
+            {
+                "name": "呼伦贝尔市",
+                "value": 31,
+                "type": 2
+            },
+            {
+                "name": "天津市",
+                "value": 22,
+                "type": 0
+            },
+            {
+                "name": "怀化市",
+                "value": 32,
+                "type": 1
+            },
+            {
+                "name": "聊城市",
+                "value": 91,
+                "type": 1
+            },
+            {
+                "name": "宝鸡市",
+                "value": 64,
+                "type": 1
+            },
+            {
+                "name": "资阳市",
+                "value": 92,
+                "type": 0
+            },
+            {
+                "name": "海口市",
+                "value": 50,
+                "type": 1
+            },
+            {
+                "name": "黑河市",
+                "value": 3,
+                "type": 2
+            },
+            {
+                "name": "鹰潭市",
+                "value": 10,
+                "type": 0
+            },
+            {
+                "name": "嘉峪关市",
+                "value": 19,
+                "type": 0
+            },
+            {
+                "name": "澳门半岛",
+                "value": 85,
+                "type": 1
+            },
+            {
+                "name": "黔东南苗族侗族自治州",
+                "value": 1,
+                "type": 1
+            },
+            {
+                "name": "哈密地区",
+                "value": 46,
+                "type": 0
+            },
+            {
+                "name": "海外",
+                "value": 88,
+                "type": 1
+            },
+            {
+                "name": "白银市",
+                "value": 43,
+                "type": 1
+            },
+            {
+                "name": "包头市",
+                "value": 28,
+                "type": 1
+            },
+            {
+                "name": "温州市",
+                "value": 97,
+                "type": 1
+            },
+            {
+                "name": "乌兰察布市",
+                "value": 21,
+                "type": 1
+            },
+            {
+                "name": "固原市",
+                "value": 41,
+                "type": 2
+            },
+            {
+                "name": "离岛",
+                "value": 73,
+                "type": 0
+            },
+            {
+                "name": "海口市",
+                "value": 17,
+                "type": 1
+            },
+            {
+                "name": "宜昌市",
+                "value": 70,
+                "type": 2
+            },
+            {
+                "name": "景德镇市",
+                "value": 40,
+                "type": 0
+            },
+            {
+                "name": "三沙市",
+                "value": 18,
+                "type": 0
+            },
+            {
+                "name": "德宏傣族景颇族自治州",
+                "value": 41,
+                "type": 2
+            },
+            {
+                "name": "抚顺市",
+                "value": 42,
+                "type": 1
+            },
+            {
+                "name": "白城市",
+                "value": 16,
+                "type": 1
+            },
+            {
+                "name": "白城市",
+                "value": 87,
+                "type": 1
+            },
+            {
+                "name": "内江市",
+                "value": 8,
+                "type": 2
+            },
+            {
+                "name": "海外",
+                "value": 64,
+                "type": 1
+            },
+            {
+                "name": "台州市",
+                "value": 94,
+                "type": 1
+            },
+            {
+                "name": "六盘水市",
+                "value": 52,
+                "type": 0
+            },
+            {
+                "name": "咸宁市",
+                "value": 58,
+                "type": 1
+            },
+            {
+                "name": "通化市",
+                "value": 5,
+                "type": 0
+            },
+            {
+                "name": "福州市",
+                "value": 95,
+                "type": 0
+            },
+            {
+                "name": "三门峡市",
+                "value": 86,
+                "type": 2
+            }
+        ]
+    }
+}

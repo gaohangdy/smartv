@@ -285,6 +285,7 @@
     name: 'account',
     icon: 'user',
     path: '/account',
+    hideInMenu: true,
     routes: [
       {
         path: '/account',

@@ -31,8 +31,8 @@ const Customer: FC = () => {
   const initLayouts = [
     { i: 'pieChart', x: 0, y: 0, w: 3, h: 2 },
     { i: 'barChart', x: 3, y: 0, w: 3, h: 2 }, //, minW: 2, maxW: 4
-    { i: 'wordChart', x: 6, y: 0, w: 3, h: 2 },
-    { i: 'lineChart', x: 0, y: 6, w: 3, h: 2 },
+    { i: 'wordChart', x: 6, y: 0, w: 6, h: 2 },
+    { i: 'lineChart', x: 0, y: 6, w: 12, h: 2 },
   ];
 
   const [layout, setLayout] = useState(initLayouts);
