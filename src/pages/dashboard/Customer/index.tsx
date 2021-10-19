@@ -15,6 +15,7 @@ import {
   ChartContext,
   TextFilterWidget,
   DataTable,
+  Legend,
 } from '@gaohangdy/react-dc-js';
 import { Responsive, WidthProvider } from 'react-grid-layout';
 import { saveToLS, getSize } from '../../../utils/layout';
@@ -34,9 +35,9 @@ const Customer: FC = () => {
   const initLayouts = [
     { i: 'pieChart', x: 0, y: 0, w: 3, h: 2 },
     { i: 'barChart', x: 3, y: 0, w: 3, h: 2 }, //, minW: 2, maxW: 4
-    { i: 'wordChart', x: 6, y: 0, w: 6, h: 2 },
-    { i: 'lineChart', x: 0, y: 6, w: 6, h: 2 },
-    { i: 'contentChart', x: 6, y: 6, w: 6, h: 2 },
+    { i: 'wordChart', x: 0, y: 4, w: 6, h: 4 },
+    { i: 'lineChart', x: 6, y: 0, w: 6, h: 2 },
+    { i: 'contentChart', x: 6, y: 4, w: 6, h: 4 },
   ];
 
   const [layout, setLayout] = useState(initLayouts);
@@ -114,32 +115,32 @@ const Customer: FC = () => {
     setLayout(e);
   };
 
-  let ofs = 0;
-  const pag = 10;
+  // let ofs = 0;
+  // const pag = 10;
 
-  function update_offset(tblChart: any) {
-    const totFilteredRecs = cx.groupAll().value();
-    // const end = ofs + pag > totFilteredRecs ? totFilteredRecs : ofs + pag;
-    ofs = ofs >= totFilteredRecs ? Math.floor((totFilteredRecs - 1) / pag) * pag : ofs;
-    ofs = ofs < 0 ? 0 : ofs;
+  // function update_offset(tblChart: any) {
+  //   const totFilteredRecs = cx.groupAll().value();
+  //   // const end = ofs + pag > totFilteredRecs ? totFilteredRecs : ofs + pag;
+  //   ofs = ofs >= totFilteredRecs ? Math.floor((totFilteredRecs - 1) / pag) * pag : ofs;
+  //   ofs = ofs < 0 ? 0 : ofs;
 
-    tblChart.beginSlice(ofs);
-    tblChart.endSlice(ofs + pag);
-  }
-  function display() {
-    const totFilteredRecs = ndx.groupAll().value();
-    const end = ofs + pag > totFilteredRecs ? totFilteredRecs : ofs + pag;
-    select('#begin').text(end === 0 ? ofs : ofs + 1);
-    select('#end').text(end);
-    select('#last').attr('disabled', ofs - pag < 0 ? 'true' : null);
-    select('#next').attr('disabled', ofs + pag >= totFilteredRecs ? 'true' : null);
-    select('#size').text(totFilteredRecs);
-    if (totFilteredRecs != ndx.size()) {
-      select('#totalsize').text('(filtered Total: ' + ndx.size() + ' )');
-    } else {
-      select('#totalsize').text('');
-    }
-  }
+  //   tblChart.beginSlice(ofs);
+  //   tblChart.endSlice(ofs + pag);
+  // }
+  // function display() {
+  //   const totFilteredRecs = ndx.groupAll().value();
+  //   const end = ofs + pag > totFilteredRecs ? totFilteredRecs : ofs + pag;
+  //   select('#begin').text(end === 0 ? ofs : ofs + 1);
+  //   select('#end').text(end);
+  //   select('#last').attr('disabled', ofs - pag < 0 ? 'true' : null);
+  //   select('#next').attr('disabled', ofs + pag >= totFilteredRecs ? 'true' : null);
+  //   select('#size').text(totFilteredRecs);
+  //   if (totFilteredRecs != ndx.size()) {
+  //     select('#totalsize').text('(filtered Total: ' + ndx.size() + ' )');
+  //   } else {
+  //     select('#totalsize').text('');
+  //   }
+  // }
 
   return (
     <PageContainer
