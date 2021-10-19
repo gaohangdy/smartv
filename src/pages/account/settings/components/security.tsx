@@ -4,9 +4,9 @@ import { List } from 'antd';
 type Unpacked<T> = T extends (infer U)[] ? U : T;
 
 const passwordStrength = {
-  strong: <span className="strong">强</span>,
-  medium: <span className="medium">中</span>,
-  weak: <span className="weak">弱 Weak</span>,
+  strong: <span className="strong">Strong</span>,
+  medium: <span className="medium">Normal</span>,
+  weak: <span className="weak">Weak</span>,
 };
 
 const SecurityView: React.FC = () => {
@@ -15,7 +15,7 @@ const SecurityView: React.FC = () => {
       title: 'Password',
       description: (
         <>
-          当前密码强度：
+          Password strong：
           {passwordStrength.strong}
         </>
       ),
@@ -28,19 +28,19 @@ const SecurityView: React.FC = () => {
     },
     {
       title: 'Question',
-      description: '未设置密保问题，密保问题可有效保护账户安全',
-      actions: [<a key="Set">设置</a>],
+      description: 'Answer for remind password.',
+      actions: [<a key="Set">Edit</a>],
     },
     {
-      title: '备用邮箱',
-      description: `已绑定邮箱：ant***sign.com`,
+      title: 'Backup mail',
+      description: `Used mail：ant***sign.com`,
       actions: [<a key="Modify">Edit</a>],
     },
-    {
-      title: 'MFA 设备',
-      description: '未绑定 MFA 设备，绑定后，可以进行二次确认',
-      actions: [<a key="bind">绑定</a>],
-    },
+    // {
+    //   title: 'MFA 设备',
+    //   description: '未绑定 MFA 设备，绑定后，可以进行二次确认',
+    //   actions: [<a key="bind">绑定</a>],
+    // },
   ];
 
   const data = getData();

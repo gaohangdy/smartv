@@ -106,7 +106,7 @@ const Groups: React.FC = () => {
 
   const columns: ProColumns<API.RuleListItem>[] = [
     {
-      title: <FormattedMessage id="pages.security.users.colums.id" defaultMessage="Login Name" />,
+      title: <FormattedMessage id="pages.security.groups.colums.id" defaultMessage="Login Name" />,
       dataIndex: 'name',
       tip: 'The rule name is the unique key',
       render: (dom, entity) => {
@@ -123,7 +123,7 @@ const Groups: React.FC = () => {
       },
     },
     {
-      title: <FormattedMessage id="pages.security.users.colums.name" defaultMessage="Name" />,
+      title: <FormattedMessage id="pages.security.groups.colums.name" defaultMessage="Name" />,
       dataIndex: 'desc',
       valueType: 'textarea',
     },
@@ -152,7 +152,7 @@ const Groups: React.FC = () => {
     {
       title: (
         <FormattedMessage
-          id="pages.security.users.colums.lastlogin"
+          id="pages.security.groups.colums.lastlogin"
           defaultMessage="Last login time"
         />
       ),
@@ -184,7 +184,7 @@ const Groups: React.FC = () => {
     <PageContainer breadcrumbRender={false}>
       <ProTable<API.RuleListItem, API.PageParams>
         headerTitle={intl.formatMessage({
-          id: 'pages.security.users.title',
+          id: 'pages.security.groups.title',
           defaultMessage: 'Enquiry form',
         })}
         actionRef={actionRef}

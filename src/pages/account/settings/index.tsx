@@ -19,8 +19,8 @@ const Settings: React.FC = () => {
   const menuMap: Record<string, React.ReactNode> = {
     base: 'Basic',
     security: 'Security',
-    binding: 'Account Binding',
-    notification: 'Notification',
+    // binding: 'Account Binding',
+    // notification: 'Notification',
   };
 
   const [initConfig, setInitConfig] = useState<SettingsState>({

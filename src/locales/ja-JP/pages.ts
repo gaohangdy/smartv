@@ -78,8 +78,17 @@ export default {
 
   'pages.security.users.label': 'ユーザー',
   'pages.security.users.description': 'ユーザーを管理',
+
   'pages.security.groups.label': 'グループ',
   'pages.security.groups.description': 'ユーザーグループを管理',
+
+  'pages.security.groups.title': 'グループ一覧',
+  'pages.security.groups.colums.id': 'グループ名',
+  'pages.security.groups.colums.name': '説明',
+  'pages.security.groups.colums.status': 'ステータス',
+  'pages.security.groups.colums.lastlogin': '最終更新日時',
+
+
   'pages.dashboard.customer.label': '顧客の声',
   'pages.dashboard.customer.description': 'ユーザーを管理',
   'pages.dashboard.store.label': '店舗の声',

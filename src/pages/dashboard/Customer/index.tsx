@@ -13,13 +13,16 @@ import {
   RowChart,
   SeriesChart,
   ChartContext,
+  TextFilterWidget,
+  DataTable,
 } from '@gaohangdy/react-dc-js';
 import { Responsive, WidthProvider } from 'react-grid-layout';
 import { saveToLS, getSize } from '../../../utils/layout';
 import DcChartCard from '../../../components/DcChartCard';
+import type { DcChartData } from '../../../components/DcChartCard/data';
 import { SearchOutlined } from '@ant-design/icons';
 import * as d3 from 'd3';
-import { scaleTime, timeParse, timeMonth, timeWeek, timeWeeks } from 'd3';
+import { ascending, scaleTime, timeParse, timeMonth, timeWeek, timeWeeks } from 'd3';
 import { queryChartList, queryDcChartList } from './service';
 // import styles from './style.less';
 
@@ -32,7 +35,8 @@ const Customer: FC = () => {
     { i: 'pieChart', x: 0, y: 0, w: 3, h: 2 },
     { i: 'barChart', x: 3, y: 0, w: 3, h: 2 }, //, minW: 2, maxW: 4
     { i: 'wordChart', x: 6, y: 0, w: 6, h: 2 },
-    { i: 'lineChart', x: 0, y: 6, w: 12, h: 2 },
+    { i: 'lineChart', x: 0, y: 6, w: 6, h: 2 },
+    { i: 'contentChart', x: 6, y: 6, w: 6, h: 2 },
   ];
 
   const [layout, setLayout] = useState(initLayouts);
@@ -94,6 +98,7 @@ const Customer: FC = () => {
   });
   const groupLine = dimensionLine.group().reduceCount();
 
+  const filterDimension = cx.dimension((d) => d.content);
   // const moveMonths = cx.dimension((d) => d.month);
   // const volumeByMonthGroup = moveMonths.group().reduceSum((d) => d.volume / 500000);
 
@@ -108,6 +113,33 @@ const Customer: FC = () => {
     saveToLS('layout', e);
     setLayout(e);
   };
+
+  let ofs = 0;
+  const pag = 10;
+
+  function update_offset(tblChart: any) {
+    const totFilteredRecs = cx.groupAll().value();
+    // const end = ofs + pag > totFilteredRecs ? totFilteredRecs : ofs + pag;
+    ofs = ofs >= totFilteredRecs ? Math.floor((totFilteredRecs - 1) / pag) * pag : ofs;
+    ofs = ofs < 0 ? 0 : ofs;
+
+    tblChart.beginSlice(ofs);
+    tblChart.endSlice(ofs + pag);
+  }
+  function display() {
+    const totFilteredRecs = ndx.groupAll().value();
+    const end = ofs + pag > totFilteredRecs ? totFilteredRecs : ofs + pag;
+    select('#begin').text(end === 0 ? ofs : ofs + 1);
+    select('#end').text(end);
+    select('#last').attr('disabled', ofs - pag < 0 ? 'true' : null);
+    select('#next').attr('disabled', ofs + pag >= totFilteredRecs ? 'true' : null);
+    select('#size').text(totFilteredRecs);
+    if (totFilteredRecs != ndx.size()) {
+      select('#totalsize').text('(filtered Total: ' + ndx.size() + ' )');
+    } else {
+      select('#totalsize').text('');
+    }
+  }
 
   return (
     <PageContainer
@@ -176,7 +208,11 @@ const Customer: FC = () => {
             </DcChartCard>
           </div>
           <div key="wordChart" data-grid={initLayouts.filter((item) => item.i == 'wordChart')}>
-            <DcChartCard loading={loading} title="ワードクラウド" size={getSize('wordChart', layout)}>
+            <DcChartCard
+              loading={loading}
+              title="ワードクラウド"
+              size={getSize('wordChart', layout)}
+            >
               <WordcloudChart
                 minX="0"
                 minY="0"
@@ -188,7 +224,11 @@ const Customer: FC = () => {
             </DcChartCard>
           </div>
           <div key="lineChart" data-grid={initLayouts.filter((item) => item.i == 'lineChart')}>
-            <DcChartCard loading={loading} title="日付別問い合わせ" size={getSize('lineChart', layout)}>
+            <DcChartCard
+              loading={loading}
+              title="日付別問い合わせ"
+              size={getSize('lineChart', layout)}
+            >
               <BarChart
                 dimension={dimensionLine}
                 group={groupLine}
@@ -202,6 +242,29 @@ const Customer: FC = () => {
                 alwaysUseRounding={true}
                 xUnits={d3.timeDays}
               />
+            </DcChartCard>
+          </div>
+          <div
+            key="contentChart"
+            data-grid={initLayouts.filter((item) => item.i == 'contentChart')}
+          >
+            <DcChartCard
+              loading={loading}
+              title="問い合わせ明細"
+              size={getSize('contentChart', layout)}
+            >
+              <div className="text-filter-table">
+              <TextFilterWidget dimension={filterDimension} />
+              </div>
+              <div className="chart-type-table">
+              <DataTable
+                dimension={filterDimension}
+                size={50}
+                columns={[(d: DcChartData) => d.content]}
+                sortBy={(d: DcChartData) => d.content}
+                order={ascending}
+              />
+              </div>
             </DcChartCard>
           </div>
         </ResponsiveGridLayout>
