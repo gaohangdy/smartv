@@ -13,8 +13,8 @@ export default defineConfig({
   dva: {
     hmr: true,
   },
-  base: '/cloud-analytics-web/',
-  publicPath: '/cloud-analytics-web/',  
+  base: '/cloud-analytics-web2/',
+  publicPath: '/cloud-analytics-web2/',  
   layout: {
     // https://umijs.org/zh-CN/plugins/plugin-layout
     locale: true,

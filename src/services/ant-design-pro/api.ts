@@ -6,7 +6,7 @@ import { request } from 'umi';
 export async function currentUser(options?: { [key: string]: any }) {
   return request<{
     data: API.CurrentUser;
-  }>('/cloud-analytics-web/api/currentUser.json', {
+  }>('/cloud-analytics-web2/api/currentUser.json', {
     method: 'GET',
     ...(options || {}),
   });
@@ -14,7 +14,7 @@ export async function currentUser(options?: { [key: string]: any }) {
 
 /** 退出登录接口 POST /api/login/outLogin */
 export async function outLogin(options?: { [key: string]: any }) {
-  return request<Record<string, any>>('/cloud-analytics-web/api/login/outLogin.json', {
+  return request<Record<string, any>>('/cloud-analytics-web2/api/login/outLogin.json', {
     method: 'GET',
     ...(options || {}),
   });
@@ -22,7 +22,7 @@ export async function outLogin(options?: { [key: string]: any }) {
 
 /** 登录接口 POST /api/login/account */
 export async function login(body: API.LoginParams, options?: { [key: string]: any }) {
-  return request<API.LoginResult>('/cloud-analytics-web/api/login/account.json', {
+  return request<API.LoginResult>('/cloud-analytics-web2/api/login/account.json', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ export async function login(body: API.LoginParams, options?: { [key: string]: an
 
 /** 此处后端没有提供注释 GET /api/notices */
 export async function getNotices(options?: { [key: string]: any }) {
-  return request<API.NoticeIconList>('/cloud-analytics-web/api/notices.json', {
+  return request<API.NoticeIconList>('/cloud-analytics-web2/api/notices.json', {
     method: 'GET',
     ...(options || {}),
   });
@@ -51,7 +51,7 @@ export async function rule(
   },
   options?: { [key: string]: any },
 ) {
-  return request<API.RuleList>('/cloud-analytics-web/api/rule.json', {
+  return request<API.RuleList>('/cloud-analytics-web2/api/rule.json', {
     method: 'GET',
     params: {
       ...params,
@@ -62,7 +62,7 @@ export async function rule(
 
 /** 新建规则 PUT /api/rule */
 export async function updateRule(options?: { [key: string]: any }) {
-  return request<API.RuleListItem>('/cloud-analytics-web/api/rule', {
+  return request<API.RuleListItem>('/cloud-analytics-web2/api/rule', {
     method: 'PUT',
     ...(options || {}),
   });

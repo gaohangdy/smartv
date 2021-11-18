@@ -134,67 +134,6 @@ const BaseView: React.FC = () => {
                   },
                 ]}
               />
-
-              <ProForm.Group title="State" size={8}>
-                <ProFormSelect
-                  rules={[
-                    {
-                      required: true,
-                      message: 'Please input state!',
-                    },
-                  ]}
-                  width="sm"
-                  fieldProps={{
-                    labelInValue: true,
-                  }}
-                  name="province"
-                  className={styles.item}
-                  request={async () => {
-                    return queryProvince().then(({ data }) => {
-                      return data.map((item) => {
-                        return {
-                          label: item.name,
-                          value: item.id,
-                        };
-                      });
-                    });
-                  }}
-                />
-                <ProFormDependency name={['province']}>
-                  {({ province }) => {
-                    return (
-                      <ProFormSelect
-                        params={{
-                          key: province?.value,
-                        }}
-                        name="city"
-                        width="sm"
-                        rules={[
-                          {
-                            required: true,
-                            message: 'Please input city!',
-                          },
-                        ]}
-                        disabled={!province}
-                        className={styles.item}
-                        request={async () => {
-                          if (!province?.key) {
-                            return [];
-                          }
-                          return queryCity(province.key || '').then(({ data }) => {
-                            return data.map((item) => {
-                              return {
-                                label: item.name,
-                                value: item.id,
-                              };
-                            });
-                          });
-                        }}
-                      />
-                    );
-                  }}
-                </ProFormDependency>
-              </ProForm.Group>
               <ProFormText
                 width="md"
                 name="address"

@@ -14,7 +14,7 @@ export async function queryDcChartList(params: {
   count: number;
 }): Promise<{ data: { list: DcChartData[] } }> {
   console.log('Start request charts data');
-  return request('/cloud-analytics-web/api/dccharts.json', {
+  return request('/cloud-analytics-web2/api/dccharts.json', {
     params,
   });
 }

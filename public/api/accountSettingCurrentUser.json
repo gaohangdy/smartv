@@ -1,0 +1,50 @@
+{
+    "name": "Serati Ma",
+    "avatar": "https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png",
+    "userid": "00000001",
+    "email": "admin@voc.com",
+    "signature": "To be success",
+    "title": "Manager",
+    "group": "VOC",
+    "tags": [
+        {
+            "key": "0",
+            "label": "Good"
+        },
+        {
+            "key": "1",
+            "label": "Design"
+        },
+        {
+            "key": "2",
+            "label": "amazing"
+        },
+        {
+            "key": "3",
+            "label": "coll"
+        },
+        {
+            "key": "4",
+            "label": "Real"
+        },
+        {
+            "key": "5",
+            "label": "Hi"
+        }
+    ],
+    "notifyCount": 12,
+    "unreadCount": 11,
+    "country": "Japan",
+    "geographic": {
+        "province": {
+            "label": "東京都",
+            "key": "330000"
+        },
+        "city": {
+            "label": "新宿区",
+            "key": "330100"
+        }
+    },
+    "address": "Test address",
+    "phone": "XX-XXXXXXX"
+}
