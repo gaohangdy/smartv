@@ -47,14 +47,16 @@ const BaseView: React.FC = () => {
   });
 
   const getAvatarURL = () => {
-    if (currentUser) {
-      if (currentUser.avatar) {
-        return currentUser.avatar;
-      }
-      const url = 'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png';
-      return url;
-    }
-    return '';
+    // if (currentUser) {
+    //   if (currentUser.avatar) {
+    //     return currentUser.avatar;
+    //   }
+    //   const url = 'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png';
+    //   return url;
+    // }
+    // return '';
+    const url = 'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png';
+    return url;
   };
 
   const handleFinish = async () => {
@@ -85,6 +87,7 @@ const BaseView: React.FC = () => {
               hideRequiredMark
             >
               <ProFormText
+                initialValue="demo@cloud.analytics.com"
                 width="md"
                 name="email"
                 label="Mail"
@@ -96,6 +99,7 @@ const BaseView: React.FC = () => {
                 ]}
               />
               <ProFormText
+                initialValue="デモ　太郎"
                 width="md"
                 name="name"
                 label="Nick Name"
@@ -107,6 +111,9 @@ const BaseView: React.FC = () => {
                 ]}
               />
               <ProFormTextArea
+                initialValue={`はじめまして、デモ太郎です。
+デモ用のユーザーです。
+よろしくお願いします。`}
                 name="profile"
                 label="Introduction"
                 rules={[
@@ -118,6 +125,7 @@ const BaseView: React.FC = () => {
                 placeholder="introduction"
               />
               <ProFormSelect
+                initialValue="Japan"
                 width="sm"
                 name="country"
                 label="Country/Region"
@@ -134,7 +142,83 @@ const BaseView: React.FC = () => {
                   },
                 ]}
               />
+
+              <ProForm.Group title="State" size={8}>
+                <ProFormSelect
+                  initialValue="Tokyo"
+                  rules={[
+                    {
+                      required: true,
+                      message: 'Please input state!',
+                    },
+                  ]}
+                  options={[
+                    {
+                      label: '東京',
+                      value: 'Tokyo',
+                    },
+                  ]}
+                  width="sm"
+                  // fieldProps={{
+                  //   labelInValue: true,
+                  // }}
+                  name="province"
+                // className={styles.item}
+                // request={async () => {
+                //   return queryProvince().then(({ data }) => {
+                //     return data && data.map((item) => {
+                //       return {
+                //         label: item.name,
+                //         value: item.id,
+                //       };
+                //     });
+                //   });
+                // }}
+                />
+                <ProFormDependency name={['province']}>
+                  {({ province }) => {
+                    return (
+                      <ProFormSelect
+                        initialValue="Minato"
+                        params={{
+                          key: province?.value,
+                        }}
+                        name="city"
+                        width="sm"
+                        rules={[
+                          {
+                            required: true,
+                            message: 'Please input city!',
+                          },
+                        ]}
+                        options={[
+                          {
+                            label: '港区',
+                            value: 'Minato',
+                          },
+                        ]}
+                        disabled={!province}
+                        className={styles.item}
+                      // request={async () => {
+                      //   if (!province?.key) {
+                      //     return [];
+                      //   }
+                      //   return queryCity(province.key || '').then(({ data }) => {
+                      //     return data && data.map((item) => {
+                      //       return {
+                      //         label: item.name,
+                      //         value: item.id,
+                      //       };
+                      //     });
+                      //   });
+                      // }}
+                      />
+                    );
+                  }}
+                </ProFormDependency>
+              </ProForm.Group>
               <ProFormText
+                initialValue="海岸１−２−３  "
                 width="md"
                 name="address"
                 label="Address"
@@ -146,6 +230,7 @@ const BaseView: React.FC = () => {
                 ]}
               />
               <ProFormFieldSet
+                value={['81', '7012345678']}
                 name="phone"
                 label="TEL"
                 rules={[
@@ -153,11 +238,11 @@ const BaseView: React.FC = () => {
                     required: true,
                     message: 'Please input TEL!',
                   },
-                  { validator: validatorPhone },
+                  // { validator: validatorPhone },
                 ]}
               >
-                <Input className={styles.area_code} />
-                <Input className={styles.phone_number} />
+                <Input className={styles.area_code}/>
+                <Input className={styles.phone_number}/>
               </ProFormFieldSet>
             </ProForm>
           </div>

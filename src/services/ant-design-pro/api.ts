@@ -14,10 +14,14 @@ export async function currentUser(options?: { [key: string]: any }) {
 
 /** 退出登录接口 POST /api/login/outLogin */
 export async function outLogin(options?: { [key: string]: any }) {
-  return request<Record<string, any>>('/cloud-analytics-web2/api/login/outLogin.json', {
+  return request<Record<string, any>>('', {
     method: 'GET',
     ...(options || {}),
   });
+  // return request<Record<string, any>>('/cloud-analytics-web2/api/login/outLogin.json', {
+  //   method: 'GET',
+  //   ...(options || {}),
+  // });
 }
 
 /** 登录接口 POST /api/login/account */

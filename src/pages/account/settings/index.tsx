@@ -5,11 +5,12 @@ import BaseView from './components/base';
 import BindingView from './components/binding';
 import NotificationView from './components/notification';
 import SecurityView from './components/security';
+import PermissionView from './components/permission';
 import styles from './style.less';
 
 const { Item } = Menu;
 
-type SettingsStateKeys = 'base' | 'security' | 'binding' | 'notification';
+type SettingsStateKeys = 'base' | 'security' | 'binding' | 'notification' | 'permission';
 type SettingsState = {
   mode: 'inline' | 'horizontal';
   selectKey: SettingsStateKeys;
@@ -19,6 +20,7 @@ const Settings: React.FC = () => {
   const menuMap: Record<string, React.ReactNode> = {
     base: 'Basic',
     security: 'Security',
+    permission: 'Permission',
     // binding: 'Account Binding',
     // notification: 'Notification',
   };
@@ -71,6 +73,8 @@ const Settings: React.FC = () => {
         return <BindingView />;
       case 'notification':
         return <NotificationView />;
+      case 'permission':
+        return <PermissionView />;
       default:
         return null;
     }
